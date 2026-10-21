@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sevren | Intelligence without limits</title>
+  <meta name="description" content="Abliterated, open-weight LLMs for research and real work. Use Sevren in the terminal or connect your own agent.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="public-header">
+    <div class="public-header-inner">
+      <a class="brand public-brand" aria-label="Sevren home" href="#top">
+        <span class="brand-mark" aria-hidden="true"><img alt="" width="80" height="80" src="assets/logo.png"></span>
+        <span class="brand-wordmark">Sevren</span>
+      </a>
+      <nav class="public-nav" aria-label="Main navigation">
+        <a href="#models">Models</a>
+        <a href="https://docs.sevren.xyz/docs/pricing">Pricing</a>
+        <a href="https://docs.sevren.xyz/docs">Docs</a>
+        <a href="#how-it-works">Privacy</a>
+      </nav>
+      <a href="https://x.com/usesevren" class="public-social-link" target="_blank" rel="noopener noreferrer" aria-label="Sevren on X (opens in a new tab)">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg>
+      </a>
+      <div class="public-actions">
+        <a class="button button-secondary" href="https://app.sevren.xyz/login">Sign in</a>
+        <a class="button button-primary" href="https://app.sevren.xyz/chat">Open terminal <span aria-hidden="true">↗</span></a>
+      </div>
+      <button class="public-menu-toggle button-secondary" type="button" aria-expanded="false" aria-controls="public-navigation">Menu +</button>
+    </div>
+    <nav id="public-navigation" class="public-mobile-nav" aria-label="Mobile navigation" data-open="false" hidden>
+      <a href="#models">Models</a>
+      <a href="https://docs.sevren.xyz/docs/pricing">Pricing</a>
+      <a href="https://docs.sevren.xyz/docs">Docs</a>
+      <a href="#how-it-works">Privacy</a>
+      <a href="https://app.sevren.xyz/login">Sign in</a>
+      <a href="https://app.sevren.xyz/chat">Open terminal</a>
+    </nav>
+  </header>
+
+  <main class="public-main" id="main">
+    <section class="landing-hero" id="top" aria-labelledby="landing-title">
+      <div class="hero-light-field" aria-hidden="true">
+        <div class="hero-arc"></div>
+        <div class="hero-arc hero-arc-secondary"></div>
+      </div>
+      <div class="hero-composition">
+        <div class="hero-coordinate">
+          <span>UNCENSORED LLMS</span>
+          <span>INDEPENDENT THINKING</span>
+        </div>
+        <div class="landing-hero-copy">
+          <h1 id="landing-title">
+            <span class="hero-line">Intelligence</span>
+            <span class="hero-line hero-line-secondary">without limits.</span>
+          </h1>
+          <p class="landing-lede">Abliterated, open-weight LLMs for research and real work. Use Sevren in the terminal or connect your own agent.</p>
+          <div class="landing-hero-actions">
+            <a class="button button-primary" href="https://app.sevren.xyz/chat">Open terminal <span aria-hidden="true">↗</span></a>
+            <a class="landing-secondary-link" href="#models">Choose your model <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-contract" aria-label="Sevren token contract">
+            <div class="hero-contract-label"><span>Robinhood Chain</span><span>Token CA</span></div>
+            <div class="hero-contract-value">
+              <a href="https://robinhoodchain.blockscout.com/address/0x6020a3992fd7dbb8a1622d9c4e0f7497bb819db0" target="_blank" rel="noopener noreferrer" aria-label="View Sevren token contract on Robinhood Chain explorer"><code id="contract-address">0x6020a3992fd7dbb8a1622d9c4e0f7497bb819db0</code></a>
+              <button type="button" class="text-button" id="copy-contract" aria-label="Copy Sevren contract address">Copy</button>
+            </div>
+            <span role="status" class="sr-only" id="copy-status"></span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-emblem"><img alt="" width="512" height="512" src="assets/logo.png"></div>
+        </div>
+        <div class="hero-footnote">
+          <p>For research, reasoning &amp; code</p>
+          <a href="https://docs.sevren.xyz/docs/payments">ETH / USDG <span>on Robinhood Chain</span></a>
+          <span class="hero-scroll-note">SCROLL TO EXPLORE ↓</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-models landing-container" id="models" aria-labelledby="models-title">
+      <div class="editorial-heading">
+        <div>
+          <p class="landing-eyebrow">THE MODEL COLLECTION</p>
+          <h2 id="models-title">Choose how far<br>you want to go.</h2>
+        </div>
+        <div>
+          <p>From everyday reasoning to deep security research. One account, the same API, your choice of model.</p>
+          <a class="landing-secondary-link" href="https://docs.sevren.xyz/docs/models">Full model specifications <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="model-collection">
+        <a class="collection-row" href="https://docs.sevren.xyz/docs/models?model=sevren-lite-27b">
+          <div class="collection-name"><span>UNCENSORED / ABLITERATED</span><h3>Sevren Lite 27B</h3></div>
+          <div class="collection-context"><span>CONTEXT WINDOW</span><p>262,144 <small>tokens</small></p></div>
+          <div class="collection-price"><span>INPUT / OUTPUT · PER 1M</span><p>Free <i>/</i> Free</p></div>
+          <span class="collection-open" aria-hidden="true">↗</span>
+        </a>
+        <a class="collection-row" href="https://docs.sevren.xyz/docs/models?model=sevren-unchained">
+          <div class="collection-name"><span>UNCENSORED / ABLITERATED</span><h3>Sevren Unchained</h3></div>
+          <div class="collection-context"><span>CONTEXT WINDOW</span><p>262,144 <small>tokens</small></p></div>
+          <div class="collection-price"><span>INPUT / OUTPUT · PER 1M</span><p>Free <i>/</i> Free</p></div>
+          <span class="collection-open" aria-hidden="true">↗</span>
+        </a>
+        <a class="collection-row" href="https://docs.sevren.xyz/docs/models?model=sevren">
+          <div class="collection-name"><span>UNCENSORED / ABLITERATED</span><h3>Sevren</h3></div>
+          <div class="collection-context"><span>CONTEXT WINDOW</span><p>262,144 <small>tokens</small></p></div>
+          <div class="collection-price"><span>INPUT / OUTPUT · PER 1M</span><p>$1.275 <i>/</i> $2.295</p></div>
+          <span class="collection-open" aria-hidden="true">↗</span>
+        </a>
+        <a class="collection-row" href="https://docs.sevren.xyz/docs/models?model=sevren-lite-flash">
+          <div class="collection-name"><span>UNCENSORED / ABLITERATED</span><h3>Sevren Lite Flash</h3></div>
+          <div class="collection-context"><span>CONTEXT WINDOW</span><p>262,144 <small>tokens</small></p></div>
+          <div class="collection-price"><span>INPUT / OUTPUT · PER 1M</span><p>$0.68 <i>/</i> $1.70</p></div>
+          <span class="collection-open" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="landing-story landing-container" id="how-it-works" aria-labelledby="story-title">
+      <div class="landing-story-heading">
+        <p class="landing-eyebrow">PRIVACY AT SEVREN</p>
+        <h2 id="story-title">Know what<br>you share.</h2>
+        <a class="landing-secondary-link" href="https://docs.sevren.xyz/docs/privacy">Read the privacy model <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="privacy-ledger">
+        <article>
+          <span class="ledger-label">CONVERSATIONS</span>
+          <h3>On your device. Under your control.</h3>
+          <p>Chat history stays in this browser by default. Clear it whenever you choose, or turn saving off for an in-memory session.</p>
+        </article>
+        <article>
+          <span class="ledger-label">AT OUR LAYER</span>
+          <h3>No IP logs. No trackers.</h3>
+          <p>Sevren handles prompts and completions in memory. Request bodies, including requests answered with an error, are not retained.</p>
+        </article>
+        <article>
+          <span class="ledger-label">CLEAR BOUNDARIES</span>
+          <h3>Public payments. Separate content path.</h3>
+          <p>ETH and USDG payments are public on Robinhood Chain and linked to your account. The payment watcher never receives prompts. An upstream inference provider processes model requests.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="capabilities-section" id="research" aria-labelledby="capabilities-title">
+      <div class="landing-container">
+        <div class="capabilities-meta">
+          <p class="landing-eyebrow">BUILT FOR SECURITY RESEARCH</p>
+          <span>OFFENSE &amp; DEFENSE</span>
+        </div>
+        <div class="capabilities-heading">
+          <h2 id="capabilities-title">See both sides.<br>Think further.</h2>
+          <div class="capability-tabs" role="tablist" aria-label="Research perspective">
+            <button type="button" role="tab" id="tab-red" aria-selected="true" aria-controls="research-panel">Red team</button>
+            <button type="button" role="tab" id="tab-blue" aria-selected="false" aria-controls="research-panel" tabindex="-1">Blue team</button>
+          </div>
+        </div>
+        <div class="capabilities-grid" id="research-panel" role="tabpanel" aria-labelledby="tab-red">
+          <div class="capability-copy">
+            <p class="capability-kicker" id="cap-kicker">OFFENSIVE RESEARCH</p>
+            <h3 id="cap-title">Question the security assumptions.</h3>
+            <p class="capability-description" id="cap-desc">Examine security boundaries in authorized environments. Use adversarial thinking to strengthen your defenses.</p>
+            <ol class="capability-list" id="cap-list">
+              <li><span aria-hidden="true">01</span><div><h4>Vulnerability research</h4><p>Investigate root causes and assess security boundaries.</p></div></li>
+              <li><span aria-hidden="true">02</span><div><h4>Adversary emulation</h4><p>Develop realistic exercises for controlled environments.</p></div></li>
+              <li><span aria-hidden="true">03</span><div><h4>Attack-surface review</h4><p>Examine exposure across cloud, identity, and infrastructure.</p></div></li>
+            </ol>
+          </div>
+          <div class="workflow-panel">
+            <div class="workflow-header">
+              <div class="workflow-models">
+                <a href="https://docs.sevren.xyz/docs/models?model=sevren-lite-27b">SEVREN LITE 27B <span class="model-abliterated">(abliterated)</span></a>
+                <a href="https://docs.sevren.xyz/docs/models?model=sevren">SEVREN <span class="model-abliterated">(abliterated)</span></a>
+              </div>
+              <span>WORKFLOW</span>
+            </div>
+            <div class="workflow-signal" aria-hidden="true"></div>
+            <div class="workflow-body">
+              <p class="workflow-label">START WITH A QUESTION</p>
+              <blockquote id="cap-quote">Review this authorized test environment. Identify the exposed trust boundaries, prioritize the assumptions to validate, and propose a controlled assessment plan.</blockquote>
+              <p class="workflow-label">DEFINE THE OUTPUT</p>
+              <ul class="workflow-outputs" id="cap-outputs">
+                <li>Boundary analysis</li>
+                <li>Test priorities</li>
+                <li>Assessment plan</li>
+              </ul>
+              <a class="button button-primary" href="https://app.sevren.xyz/chat?model=sevren">Open your workspace <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-integrations landing-container" id="integrations" aria-labelledby="integrations-title">
+      <div>
+        <p class="landing-eyebrow">IN YOUR WORKFLOW</p>
+        <h2 id="integrations-title">Your tools.<br>A different engine.</h2>
+      </div>
+      <div class="integration-content">
+        <p>Connect your agent through OpenAI-compatible Chat Completions or Anthropic-compatible Messages. Keep your workflow. Choose your intelligence.</p>
+        <div class="integration-clients">
+          <span>OpenCode</span>
+          <span>Claude Code</span>
+          <span>Cline</span>
+          <span>Hermes</span>
+          <span>Aider</span>
+        </div>
+        <a class="button button-secondary" href="https://docs.sevren.xyz/docs/integrations">Connect your agent</a>
+        <p class="fine-print">Codex requires a separate Responses-compatible gateway. Configuration and compatibility details are in the docs.</p>
+      </div>
+    </section>
+
+    <section class="landing-faq landing-container" id="faq" aria-labelledby="questions-title">
+      <div>
+        <p class="landing-eyebrow">THE DETAILS</p>
+        <h2 id="questions-title">Before you<br>begin.</h2>
+      </div>
+      <div class="landing-questions">
+        <details>
+          <summary>What does Sevren keep?<span aria-hidden="true">+</span></summary>
+          <p>No email, no IP logs, and no stored prompts or completions. Account balances and content-free usage totals are retained. Payments are public and linked to the account they credit. The network provider and upstream inference provider see traffic in transit. Read the <a href="https://docs.sevren.xyz/docs/privacy">full privacy boundaries</a>.</p>
+        </details>
+        <details>
+          <summary>How do I add credit?<span aria-hidden="true">+</span></summary>
+          <p>Pay ETH or USDG on Robinhood Chain (chain ID 4663) from your account page. Credit appears after 900 block confirmations, usually 1 to 2 minutes later. USDG is credited one to one; ETH uses the Chainlink ETH/USD price. Credit cannot be withdrawn or refunded.</p>
+        </details>
+        <details>
+          <summary>What do token holders get?<span aria-hidden="true">+</span></summary>
+          <p>From 0.5% of token supply, OUTLAW grants daily free tokens on paid models. From 1%, LEGEND grants higher allowances. A wallet holding at least 0.15% can also qualify for a one-time free try. Availability and amounts come from the live catalog. See <a href="https://docs.sevren.xyz/docs/holders">holder benefits</a> for current terms.</p>
+        </details>
+        <details>
+          <summary>Can I use my existing agent?<span aria-hidden="true">+</span></summary>
+          <p>Yes, if it supports OpenAI Chat Completions or Anthropic Messages. Use your Sevren API key and the model ID from the catalog. Streaming and function tools are supported; image inputs are not. See the <a href="https://docs.sevren.xyz/docs/integrations">integration guides</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="landing-cta" aria-labelledby="closing-title">
+      <div class="landing-container">
+        <img class="closing-banner" alt="Sevren. Intelligence without limits." width="1300" height="480" src="assets/banner.png">
+        <div class="closing-content">
+          <h2 id="closing-title">Bring your<br>hardest questions.</h2>
+          <div>
+            <a class="button button-primary" href="https://app.sevren.xyz/chat">Open terminal <span aria-hidden="true">↗</span></a>
+            <a class="landing-secondary-link" href="https://app.sevren.xyz/login">Create an account</a>
+          </div>
+        </div>
+        <div class="landing-colophon">
+          <span>SEVREN / INTELLIGENCE WITHOUT LIMITS</span>
+          <div>
+            <a href="https://docs.sevren.xyz/docs/privacy">Privacy</a>
+            <a href="https://sevren.xyz/terms">Terms</a>
+            <a href="https://docs.sevren.xyz/docs">Documentation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="command-overlay" id="command-overlay" hidden>
+    <div class="command-modal" role="dialog" aria-modal="true" aria-labelledby="command-title">
+      <h2 id="command-title" class="sr-only">Commands</h2>
+      <input class="command-search" id="command-search" type="text" placeholder="Find a command" autocomplete="off" aria-label="Find a command">
+      <div class="command-results" id="command-results" role="listbox"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
