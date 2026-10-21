@@ -48,16 +48,29 @@ mobileNav.addEventListener("click", (event) => {
 const copyButton = document.getElementById("copy-contract");
 const copyStatus = document.getElementById("copy-status");
 
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    const area = document.createElement("textarea");
+    area.value = text;
+    area.setAttribute("readonly", "");
+    area.style.position = "fixed";
+    area.style.left = "-9999px";
+    document.body.appendChild(area);
+    area.select();
+    const ok = document.execCommand("copy");
+    area.remove();
+    return ok;
+  }
+}
+
 copyButton.addEventListener("click", async () => {
   const address = document.getElementById("contract-address").textContent.trim();
-  try {
-    await navigator.clipboard.writeText(address);
-    copyButton.textContent = "Copied";
-    copyStatus.textContent = "Contract address copied.";
-  } catch {
-    copyButton.textContent = "Copy";
-    copyStatus.textContent = "Could not copy the contract address.";
-  }
+  const ok = await copyText(address);
+  copyButton.textContent = ok ? "Copied" : "Copy";
+  copyStatus.textContent = ok ? "Contract address copied." : "Could not copy the contract address.";
   window.setTimeout(() => {
     copyButton.textContent = "Copy";
   }, 1600);
